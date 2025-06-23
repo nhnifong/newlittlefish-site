@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ヘルスコーチ　Miki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Diagonal tan-green gradient background - initial state */
+            background: linear-gradient(135deg, #F8F5EE 0%, #CCDDD9 100%); /* Light tan to soft green */
+            transition: background 0.1s ease-out; /* Smooth transition for background movement */
+        }
+        .bg-soft-green {
+            background-color: #DDEEE9; /* A muted, soft green */
+        }
+        .bg-dark-green {
+            background-color: #4A6B5C; /* A darker shade of the soft green */
+        }
+        .text-dark-green {
+            color: #4A6B5C; /* A darker shade of the soft green for text */
+        }
+        .border-soft-green {
+            border-color: #DDEEE9;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 lg:px-24 rounded-b-3xl">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo/Business Name -->
+            <div class="text-2xl font-bold text-dark-green">ヘルスコーチ　Miki</div>
+            <!-- Navigation Links -->
+            <ul class="flex space-x-6 md:space-x-10 text-lg">
+                <li><a href="#" class="hover:text-dark-green transition duration-300">Testimonials</a></li>
+                <li><a href="#" class="hover:text-dark-green transition duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-soft-green py-20 md:py-32 lg:py-40 text-center rounded-3xl mx-4 md:mx-8 lg:mx-20 mt-8 mb-12 overflow-hidden shadow-lg">
+        <div class="container mx-auto px-6 relative z-10">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark-green leading-tight mb-6">
+                健康に挑戦し、心穏やかに
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto mb-10">
+                私たちは、低血糖や不安を抱えるお母さんたちがカンジダダイエットでより健康的な生活を送れるようサポートします。
+            </p>
+            <button class="bg-dark-green text-white px-8 py-4 rounded-full text-xl font-semibold shadow-lg hover:bg-opacity-90 transition duration-300 transform hover:scale-105">
+                詳細を見る
+            </button>
+        </div>
+        <div class="absolute inset-0 z-0 opacity-20">
+            <div class="w-96 h-96 bg-white rounded-full absolute -top-20 -left-20 transform rotate-45"></div>
+            <div class="w-72 h-72 bg-white rounded-full absolute -bottom-10 -right-10 transform -rotate-30"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="container mx-auto px-6 md:px-12 lg:px-20 py-16 mb-12">
+        <div class="flex flex-col md:flex-row items-center justify-between bg-white p-8 md:p-12 rounded-3xl shadow-lg">
+            <div class="md:w-1/2 md:pr-10 mb-8 md:mb-0">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark-green mb-6">About Miki</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    静岡県生まれ、</p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    アメリカ東海岸在住 女性のための低血糖改善サポート</p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    カンジダダイエットチャレンジサポート</p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    ７０キロ以上からのダイエット</p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    年子とベビーのママ</p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    ホリスティックヘルスコーチとして活動中</p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    低血糖改善サポートコーチ</p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    低血糖症状を改善して今より動ける自分になるプログラム</p>
+            </div>
+            <div class="md:w-1/2 flex justify-center items-center">
+                <img src="profile-1-300x300.png" class="rounded-2xl shadow-md w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container mx-auto px-6 md:px-12 lg:px-20 py-16 mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-dark-green mb-12">コーチングサービス</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service Card 1 -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center text-center transition duration-300 transform hover:scale-105">
+                <div class="w-16 h-16 bg-soft-green rounded-full flex items-center justify-center mb-6">
+                    <!-- Icon placeholder -->
+                    <svg class="w-8 h-8 text-dark-green" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold text-dark-green mb-4">個人の成長</h3>
+                <p class="text-gray-700">
+                    自信を見つけ、有意義な目標を設定し、ストレスを防ぐ習慣を身につけましょう。
+                </p>
+            </div>
+            <!-- Service Card 2 -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center text-center transition duration-300 transform hover:scale-105">
+                <div class="w-16 h-16 bg-soft-green rounded-full flex items-center justify-center mb-6">
+                    <!-- Icon placeholder -->
+                    <svg class="w-8 h-8 text-dark-green" fill="currentColor" viewBox="0 0 20 20"><path d="M7 3a1 1 0 00-1 1v1a1 1 0 002 0V4a1 1 0 00-1-1zM9 2a1 1 0 00-1 1v2a1 1 0 002 0V3a1 1 0 00-1-1zM11 3a1 1 0 00-1 1v1a1 1 0 002 0V4a1 1 0 00-1-1z"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold text-dark-green mb-4">気分の改善</h3>
+                <p class="text-gray-700">
+                    穏やかさと幸福は健康な体の自然な状態です
+                </p>
+            </div>
+            <!-- Service Card 3 -->
+            <div class="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center text-center transition duration-300 transform hover:scale-105">
+                <div class="w-16 h-16 bg-soft-green rounded-full flex items-center justify-center mb-6">
+                    <!-- Icon placeholder -->
+                    <svg class="w-8 h-8 text-dark-green" fill="currentColor" viewBox="0 0 20 20"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 01-8 8v-8H2z"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold text-dark-green mb-4">減量</h3>
+                <p class="text-gray-700">
+                    砂糖抜きの短期チャレンジは手の届くところにある
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-gradient-to-r from-soft-green to-[#F8F5EE] py-20 mx-4 md:mx-8 lg:mx-20 rounded-3xl text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-dark-green mb-6">旅を始める準備はできましたか?</h2>
+        <p class="text-xl text-gray-700 max-w-2xl mx-auto mb-10">
+            Mikiは新しいクライアントを受け入れています
+        </p>
+        <button class="bg-dark-green text-white px-8 py-4 rounded-full text-xl font-semibold shadow-lg hover:bg-opacity-90 transition duration-300 transform hover:scale-105">
+            無料相談を予約する
+        </button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-white py-8 px-6 md:px-12 lg:px-24 rounded-t-3xl shadow-inner mt-8">
+        <div class="container mx-auto text-center text-gray-600">
+            <p>&copy; 2025 Miki Nifong. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Get the body element
+        const body = document.body;
+
+        // Define the start and end colors for the gradient
+        const startColor = '#F8F5EE'; // Light tan
+        const endColor = '#CCDDD9';  // Soft green
+
+        // Function to update the background angle based on scroll
+        function updateBackgroundAngle() {
+            // Calculate scroll percentage (0 to 1)
+            const scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+
+            // Define the range of rotation (e.g., from 135deg to 315deg)
+            const initialAngle = 135;
+            const angleRange = 180; // Total degrees to rotate
+
+            // Calculate the current angle
+            const currentAngle = initialAngle + (scrollPercentage * angleRange);
+
+            // Apply the new background gradient with the calculated angle
+            body.style.background = `linear-gradient(${currentAngle}deg, ${startColor} 0%, ${endColor} 100%)`;
+        }
+
+        // Add a scroll event listener
+        window.addEventListener('scroll', updateBackgroundAngle);
+
+        // Call it once on load to set the initial position correctly in case of a non-zero scroll on load
+        window.addEventListener('load', updateBackgroundAngle);
+    </script>
+</body>
+</html>
